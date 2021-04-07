@@ -110,8 +110,11 @@ public class Main
     {
         message(1);
         Scanner SC = new Scanner(System.in);
-        char userInput = SC.next().charAt(0);
-        return userInput == 'Y' || userInput == 'y';
+        char userInput = Character.toUpperCase
+                (
+                        SC.next().charAt(0)
+                );
+        return userInput == 'Y';
     }
     public static boolean isBoardStillRandom
             (
